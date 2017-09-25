@@ -47,6 +47,19 @@ namespace Dungeons_and_Dragons_Combat_Tracker
             }
         }
 
+        int level;
+        public int Level
+        {
+            get
+            {
+                return level;
+            }
+            set
+            {
+                level = value;
+            }
+        }
+
         int health;
         public int Health
         {

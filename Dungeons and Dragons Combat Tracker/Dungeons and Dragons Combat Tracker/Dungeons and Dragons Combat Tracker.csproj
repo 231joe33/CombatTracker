@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Action.cs" />
+    <Compile Include="AddingCreature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingCreature.Designer.cs">
+      <DependentUpon>AddingCreature.cs</DependentUpon>
+    </Compile>
     <Compile Include="Combat Tracker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddingCreature.resx">
+      <DependentUpon>AddingCreature.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Combat Tracker.resx">
       <DependentUpon>Combat Tracker.cs</DependentUpon>
     </EmbeddedResource>

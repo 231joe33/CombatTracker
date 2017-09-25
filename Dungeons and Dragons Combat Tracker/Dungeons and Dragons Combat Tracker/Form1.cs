@@ -24,7 +24,8 @@ namespace Dungeons_and_Dragons_Combat_Tracker
 
         private void addButton_Click(object sender, EventArgs e)
         {
-
+            AddingCreature form = new AddingCreature();
+            form.ShowDialog();
         }
 
         private void submitButton_Click(object sender, EventArgs e)
