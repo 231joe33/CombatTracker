@@ -12,9 +12,11 @@ namespace Dungeons_and_Dragons_Combat_Tracker
 {
     public partial class AddingCreature : Form
     {
+        List<Creature> character;
         public AddingCreature()
         {
             InitializeComponent();
+            character = new List<Creature>();
         }
 
         private void diceTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,9 +104,37 @@ namespace Dungeons_and_Dragons_Combat_Tracker
             return health;
         }
 
-        private void submitButton_Click(object sender, EventArgs e)
+
+
+        //Create switches for Race benefits and Class benefits.
+        private void addButton_Click(object sender, EventArgs e)
         {
-            //healthGenerator(int.Parse(diceAmountTextBox.Text), diceTypeComboBox.SelectedItem.ToString(), int.Parse(bonusHPTextBox.Text));
+            if(noClassCheckBox.Checked == true)
+            {
+                classTextBox.Text = "None";
+            }
+
+            if(healthOption1.Checked == true)
+            {
+                character.Add(new Creature(int.Parse(fixedHealthTextBox.Text), nameTextBox.Text, raceTextBox.Text, classTextBox.Text, int.Parse(levelTextBox.Text)));
+            }
+            else if(healthOption2.Checked == true)
+            {
+                character.Add(new Creature(healthGenerator(int.Parse(diceAmountTextBox.Text), diceTypeComboBox.SelectedItem.ToString(), int.Parse(bonusHPTextBox.Text)), nameTextBox.Text, raceTextBox.Text, classTextBox.Text, int.Parse(levelTextBox.Text)));
+            }
+
+            nameTextBox.Clear();
+            raceTextBox.Clear();
+            classTextBox.Clear();
+            levelTextBox.Clear();
+            fixedHealthTextBox.Clear();
+            diceAmountTextBox.Clear();
+            bonusHPTextBox.Clear();
+        }
+
+        private void submitButton_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

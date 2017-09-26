@@ -12,6 +12,7 @@ namespace Dungeons_and_Dragons_Combat_Tracker
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace Dungeons_and_Dragons_Combat_Tracker
 
         private void submitButton_Click(object sender, EventArgs e)
         {
+            
 
         }
     }

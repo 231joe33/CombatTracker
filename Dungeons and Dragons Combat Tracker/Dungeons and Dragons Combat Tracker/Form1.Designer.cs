@@ -73,7 +73,7 @@
             this.beginButton.Name = "beginButton";
             this.beginButton.Size = new System.Drawing.Size(125, 79);
             this.beginButton.TabIndex = 13;
-            this.beginButton.Text = "Begin";
+            this.beginButton.Text = "Begin Combat";
             this.beginButton.UseVisualStyleBackColor = true;
             this.beginButton.Click += new System.EventHandler(this.submitButton_Click);
             // 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.submitButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.raceTextBox = new System.Windows.Forms.TextBox();
@@ -52,18 +52,19 @@
             this.bonusHealthLabel = new System.Windows.Forms.Label();
             this.warningforBonusHPLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.submitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // submitButton
+            // addButton
             // 
-            this.submitButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitButton.Location = new System.Drawing.Point(447, 444);
-            this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(103, 48);
-            this.submitButton.TabIndex = 0;
-            this.submitButton.Text = "Submit";
-            this.submitButton.UseVisualStyleBackColor = true;
-            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
+            this.addButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Location = new System.Drawing.Point(314, 444);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(103, 48);
+            this.addButton.TabIndex = 0;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // cancelButton
             // 
@@ -91,14 +92,14 @@
             // 
             // levelTextBox
             // 
-            this.levelTextBox.Location = new System.Drawing.Point(80, 150);
+            this.levelTextBox.Location = new System.Drawing.Point(80, 191);
             this.levelTextBox.Name = "levelTextBox";
             this.levelTextBox.Size = new System.Drawing.Size(100, 20);
             this.levelTextBox.TabIndex = 4;
             // 
             // classTextBox
             // 
-            this.classTextBox.Location = new System.Drawing.Point(80, 195);
+            this.classTextBox.Location = new System.Drawing.Point(80, 149);
             this.classTextBox.Name = "classTextBox";
             this.classTextBox.Size = new System.Drawing.Size(100, 20);
             this.classTextBox.TabIndex = 5;
@@ -283,11 +284,23 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Character Creation";
             // 
+            // submitButton
+            // 
+            this.submitButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.Location = new System.Drawing.Point(447, 444);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(103, 48);
+            this.submitButton.TabIndex = 24;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click_1);
+            // 
             // AddingCreature
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 504);
+            this.Controls.Add(this.submitButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.warningforBonusHPLabel);
             this.Controls.Add(this.bonusHealthLabel);
@@ -311,7 +324,7 @@
             this.Controls.Add(this.raceTextBox);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.submitButton);
+            this.Controls.Add(this.addButton);
             this.Name = "AddingCreature";
             this.Text = "AddingCreature";
             this.Load += new System.EventHandler(this.AddingCreature_Load);
@@ -322,7 +335,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.TextBox raceTextBox;
@@ -346,5 +359,6 @@
         private System.Windows.Forms.Label bonusHealthLabel;
         private System.Windows.Forms.Label warningforBonusHPLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button submitButton;
     }
 }

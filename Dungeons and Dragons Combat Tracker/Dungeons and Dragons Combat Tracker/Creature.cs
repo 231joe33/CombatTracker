@@ -153,5 +153,14 @@ namespace Dungeons_and_Dragons_Combat_Tracker
                 movementSpeed = value;
             }
         }
+
+        public Creature(int Health, string Name, string Race, string Class, int Level)
+        {
+            health = Health;
+            name = Name;
+            race = Race;
+            profession = Class;
+            level = Level;
+        }
     }
 }
