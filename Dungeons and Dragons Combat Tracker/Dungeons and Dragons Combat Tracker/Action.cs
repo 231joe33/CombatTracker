@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dungeons_and_Dragons_Combat_Tracker
 {
-    enum Action
+   public enum Action
     {
         Attack,
         Spell,

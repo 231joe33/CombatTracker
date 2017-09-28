@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dungeons_and_Dragons_Combat_Tracker
 {
-    class Creature
+    public class Creature
     {
         string name;
         public string Name

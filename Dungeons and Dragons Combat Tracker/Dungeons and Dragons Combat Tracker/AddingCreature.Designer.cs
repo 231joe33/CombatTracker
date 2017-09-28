@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.addButton = new System.Windows.Forms.Button();
-            this.cancelButton = new System.Windows.Forms.Button();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.raceTextBox = new System.Windows.Forms.TextBox();
             this.levelTextBox = new System.Windows.Forms.TextBox();
@@ -65,16 +64,6 @@
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
-            // cancelButton
-            // 
-            this.cancelButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelButton.Location = new System.Drawing.Point(12, 444);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(103, 48);
-            this.cancelButton.TabIndex = 1;
-            this.cancelButton.Text = "Cancel";
-            this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // nameTextBox
             // 
@@ -273,6 +262,7 @@
             this.warningforBonusHPLabel.Size = new System.Drawing.Size(95, 16);
             this.warningforBonusHPLabel.TabIndex = 22;
             this.warningforBonusHPLabel.Text = "If none, put 0";
+            this.warningforBonusHPLabel.Visible = false;
             // 
             // label1
             // 
@@ -323,7 +313,6 @@
             this.Controls.Add(this.levelTextBox);
             this.Controls.Add(this.raceTextBox);
             this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.addButton);
             this.Name = "AddingCreature";
             this.Text = "AddingCreature";
@@ -336,7 +325,6 @@
         #endregion
 
         private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.TextBox raceTextBox;
         private System.Windows.Forms.TextBox levelTextBox;

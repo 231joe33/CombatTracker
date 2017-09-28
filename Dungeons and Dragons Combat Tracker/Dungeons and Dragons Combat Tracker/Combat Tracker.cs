@@ -12,9 +12,16 @@ namespace Dungeons_and_Dragons_Combat_Tracker
 {
     public partial class Combat_Tracker : Form
     {
-        public Combat_Tracker()
+        List<Creature> characters;
+        public Combat_Tracker(List<Creature> Characters)
         {
             InitializeComponent();
+            characters = Characters;
+        }
+
+        private void Combat_Tracker_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

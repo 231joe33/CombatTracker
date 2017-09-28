@@ -12,7 +12,7 @@ namespace Dungeons_and_Dragons_Combat_Tracker
 {
     public partial class Form1 : Form
     {
-        
+        AddingCreature form;
         public Form1()
         {
             InitializeComponent();
@@ -25,13 +25,14 @@ namespace Dungeons_and_Dragons_Combat_Tracker
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            AddingCreature form = new AddingCreature();
+            form = new AddingCreature();
             form.ShowDialog();
         }
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            
+            Combat_Tracker gameForm = new Combat_Tracker(form.Character);
+            gameForm.ShowDialog();
 
         }
     }
