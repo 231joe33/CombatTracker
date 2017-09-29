@@ -119,7 +119,6 @@ namespace Dungeons_and_Dragons_Combat_Tracker
                 {
                     classTextBox.Text = "None";
                 }
-
                 if (healthOption1.Checked == true)
                 {
                     Character.Add(new Creature(int.Parse(fixedHealthTextBox.Text), nameTextBox.Text, raceTextBox.Text, classTextBox.Text, int.Parse(levelTextBox.Text)));

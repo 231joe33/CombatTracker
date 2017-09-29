@@ -86,6 +86,32 @@ namespace Dungeons_and_Dragons_Combat_Tracker
             }
         }
 
+        int bonusInitiative;
+        public int BonusInitiative
+        {
+            get
+            {
+                return bonusInitiative;
+            }
+            set
+            {
+                bonusInitiative = value;
+            }
+        }
+
+        int totalInitiative;
+        public int TotalInitiative
+        {
+            get
+            {
+                return totalInitiative;
+            }
+            set
+            {
+                totalInitiative = value;
+            }
+        }
+
         int passivePerception;
         public int PassivePerception
         {

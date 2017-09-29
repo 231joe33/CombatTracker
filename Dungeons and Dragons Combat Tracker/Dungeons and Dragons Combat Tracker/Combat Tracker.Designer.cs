@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.backButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
             this.doneButton = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@
             this.totalInitLabel = new System.Windows.Forms.Label();
             this.plusOrMinusLabel = new System.Windows.Forms.Label();
             this.equalLabel = new System.Windows.Forms.Label();
+            this.initiativeTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // backButton
@@ -51,6 +53,7 @@
             this.backButton.TabIndex = 0;
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.backButton_MouseClick);
             // 
             // nextButton
             // 
@@ -61,6 +64,7 @@
             this.nextButton.TabIndex = 1;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nextButton_MouseClick);
             // 
             // doneButton
             // 
@@ -153,6 +157,10 @@
             this.equalLabel.TabIndex = 11;
             this.equalLabel.Text = "=";
             // 
+            // initiativeTimer
+            // 
+            this.initiativeTimer.Tick += new System.EventHandler(this.initiativeTimer_Tick);
+            // 
             // Combat_Tracker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,5 +200,6 @@
         private System.Windows.Forms.Label totalInitLabel;
         private System.Windows.Forms.Label plusOrMinusLabel;
         private System.Windows.Forms.Label equalLabel;
+        private System.Windows.Forms.Timer initiativeTimer;
     }
 }
